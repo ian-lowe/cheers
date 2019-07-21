@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: 'Inika', serif;
+  color: #c14442;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto 50px;
+}
+
+.header {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-image: url("/static/tiki.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f7e9ba;
+    background-size: 500px 500px;
+}
+
+.content {
+    grid-column: 1 / -1;
+    padding: 10px;
+}
+
+.podcast-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.button-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+button {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #f7e9ba;
+    box-shadow: none;
+    
+}
+
+button:focus {
+    box-shadow: none;
+}
+
+.slidelabels {
+    margin: 75px 25% 5px 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slidecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #afbf9b;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #afbf9b;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: #afbf9b;
+}

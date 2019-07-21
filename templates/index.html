@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Inika&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <title>Cheers!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="content">
+            <div class="podcast-wrapper">
+                <div class="podcast-player">
+                    <h2>{{ r_json.title}}</h2>
+                    <h3>{{ r_json.episodes[0].title }}</h3>
+                    <audio controls src="{{ r_json.episodes[0].audio }}"></audio>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button>
+                    Cheers!
+                </button>
+            </div>
+            <div class="slidelabels">
+                <p>Sober</p>
+                <p>:)</p>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+</body>
+</html>
