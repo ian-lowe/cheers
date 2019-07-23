@@ -16,6 +16,5 @@ function drunkify() {
         background.style.filter = `blur(${blur}px)`;
         clink.play();
         document.getElementById('myRange').value++;
-        console.log(document.getElementById('myRange').value);
     }
 } 
