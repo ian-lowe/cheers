@@ -13,7 +13,7 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto 50px;
+    grid-template-rows: 200px auto 30px;
 }
 
 .header {
@@ -22,13 +22,13 @@ html, body {
     background-image: url("/static/tiki.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #f7e9ba;
+    background-color: #afbf9b;
     background-size: 500px 500px;
 }
 
 .content {
-    grid-column: 1 / -1;
-    padding: 10px;
+    grid-column: 1 / 10;
+    padding: 30px;
 }
 
 .podcast-wrapper {
@@ -99,6 +99,19 @@ button:focus {
     height: 25px;
     border-radius: 50%;
     background: #afbf9b;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-column: 11 / -1;
+    border-left: 1px solid #afbf9b;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-top: 20px;
 }
 
 .footer {
