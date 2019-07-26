@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Inika&display=swap" rel="stylesheet">
     <script src="{{ url_for('static', filename='main.js') }}"></script>
@@ -10,14 +10,68 @@
 
 <body>
     <div class="container">
-        <div class="header"></div>
+        <div class="header">
+            <h2>{{ r_json.title}}</h2>
+        </div>
         <div class="content">
             <div class="podcast-wrapper">
                 <div class="podcast-player">
-                    <h2>{{ r_json.title}}</h2>
-                    <h3>{{ r_json.episodes[0].title }}</h3>
+                    <h5>{{ r_json.episodes[0].title }}</h5>
                     <audio controls src="{{ r_json.episodes[0].audio }}"></audio>
                 </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[1].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[1].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[2].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[2].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[3].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[3].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[4].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[4].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[5].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[5].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[6].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[6].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[7].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[7].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[8].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[8].audio }}"></audio>
+                </div>
+                <hr>
+                <div class="podcast-player">
+                    <h5>{{ r_json.episodes[9].title }}</h5>
+                    <audio controls src="{{ r_json.episodes[9].audio }}"></audio>
+                </div>
+                <hr>
+            </div>
+            <div class="drink-selector">
+                <p>What are we drinking?</p>
+                <label><input type="radio" name="drink" value="beer">beer</label>
+                <label><input type="radio" name="drink" value="wine">wine</label>
+                <label><input type="radio" name="drink" value="gin">gin</label>
+                <label><input type="radio" name="drink" value="whiskey">whiskey</label>
             </div>
             <div class="button-wrapper">
                 <button>
@@ -31,12 +85,6 @@
             <div class="slidecontainer">
                 <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
             </div>
-        </div>
-        <div class="sidebar">
-            <input type="radio" name="drink" value="beer">beer<br>
-            <input type="radio" name="drink" value="wine">wine<br>
-            <input type="radio" name="drink" value="gin">gin<br>
-            <input type="radio" name="drink" value="whiskey">whiskey
         </div>
         <div class="footer"></div>
     </div>

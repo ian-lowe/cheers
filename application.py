@@ -23,7 +23,7 @@ def index():
 def api():
 
     url = "https://listen-api.listennotes.com/api/v2/podcasts/ff9de4bef29f4153a84fceb1207daa57?sort=recent_first"
-    headers = {'X-ListenAPI-Key': '5cfb6fbdb8634fc5babf82b88fa8c58a'}
+    headers = {'X-ListenAPI-Key': os.getenv("API_KEY")}
 
     r = requests.get(url, headers=headers)
     r_json = jsonify(r.json())

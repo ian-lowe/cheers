@@ -6,6 +6,7 @@ html, body {
   box-sizing: border-box;
   height: 100%;
   font-family: 'Inika', serif;
+  font-size: 1rem;
   color: #c14442;
 }
 
@@ -13,35 +14,48 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto 30px;
+    grid-template-rows: 75px auto 30px;
 }
 
 .header {
     grid-column: 1 / -1;
-    padding: 10px;
-    background-image: url("/static/tiki.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #afbf9b;
-    background-size: 500px 500px;
+    text-align: center;
+    padding: 10px;
 }
 
 .content {
-    grid-column: 1 / 10;
-    padding: 30px;
+    grid-column: 1 / -1;
+    padding: 10px;
 }
 
 .podcast-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    width: 75%;
+    height: 250px;
+    overflow: auto;
+    padding: 20px;
+    margin: 50px auto 0 auto;
+}
+
+hr {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+.podcast-player {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button-wrapper {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    margin-top: 15px;
+    text-align: center;
 }
 
 button {
@@ -60,8 +74,26 @@ button:focus {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.drink-selector {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.drink-selector p {
+    font-size: 1.2em;
+}
+
+.drink-selector label {
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-top: 20px;
+}
+
+
 .slidelabels {
-    margin: 75px 25% 5px 25%;
+    margin: 50px 25% 5px 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,19 +131,6 @@ button:focus {
     height: 25px;
     border-radius: 50%;
     background: #afbf9b;
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    grid-column: 11 / -1;
-    border-left: 1px solid #afbf9b;
-    justify-content: center;
-    align-items: center;
-}
-
-input[type="radio"] {
-    margin-top: 20px;
 }
 
 .footer {
