@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Inika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400&display=swap" rel="stylesheet">
     <script src="{{ url_for('static', filename='main.js') }}"></script>
     <title>Cheers!</title>
 </head>
@@ -64,14 +64,14 @@
                     <h5>{{ r_json.episodes[9].title }}</h5>
                     <audio controls src="{{ r_json.episodes[9].audio }}"></audio>
                 </div>
-                <hr>
             </div>
             <div class="drink-selector">
+                <hr>
                 <p>What are we drinking?</p>
-                <label><input type="radio" name="drink" value="beer">beer</label>
-                <label><input type="radio" name="drink" value="wine">wine</label>
-                <label><input type="radio" name="drink" value="gin">gin</label>
-                <label><input type="radio" name="drink" value="whiskey">whiskey</label>
+                <label><input type="radio" name="drink" value="beer" checked="checked"><span>beer</span></label>
+                <label><input type="radio" name="drink" value="wine"><span>wine</span></label>
+                <label><input type="radio" name="drink" value="gin"><span>gin</span></label>
+                <label><input type="radio" name="drink" value="whiskey"><span>whiskey</span></label>
             </div>
             <div class="button-wrapper">
                 <button>
