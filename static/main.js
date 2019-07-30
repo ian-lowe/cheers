@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector("button").onclick = drunkify;
+    document.querySelector("button").onclick = drink;
 });
 
 let blur = 0;
@@ -8,7 +8,7 @@ const audio = document.querySelectorAll("audio");
 const background = document.querySelector("body");
 const slider = document.getElementById("myRange");
 
-function drunkify() {
+function drink() {
     let input_val = document.querySelector("input[name=drink]:checked").value;
     if (slider.value < 20) {
         if (input_val === "beer" || input_val === "wine") {
@@ -17,14 +17,23 @@ function drunkify() {
             }
             blur += 0.1;
             slider.value = parseInt(slider.value) + 1;
-        } else {
+        } else if(input_val === "gin" || input_val === "whiskey") {
             for (podcast of audio) {
                 podcast.playbackRate -= 0.05;
             }
             blur += 0.2;
             slider.value = parseInt(slider.value) + 2;
-        }
+        } 
         background.style.filter = `blur(${blur}px)`;
         clink.play();
+    }
+    if (slider.value > 0 && input_val === "water") {
+      for (podcast of audio) {
+        podcast.playbackRate += 0.02;
+      }
+      blur -= 0.1;
+      slider.value = parseInt(slider.value) - 1;
+      background.style.filter = `blur(${blur}px)`;
+      clink.play();
     }
 }
