@@ -19,7 +19,7 @@ body, input, textarea, button {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 75px auto 30px;
+    grid-template-rows: 75px auto;
 }
 
 .header {
@@ -180,9 +180,4 @@ button:focus {
     height: 20px;
     border-radius: 50%;
     background: #1985a1;
-}
-
-.footer {
-    grid-column: 1 / -1;
-    background-color: #1985a1;
 }
