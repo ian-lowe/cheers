@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400&display=swap" rel="stylesheet">
-    <script src="{{ url_for('static', filename='main.js') }}"></script>
     <title>Cheers!</title>
 </head>
 
@@ -83,10 +82,11 @@
                 <p>:)</p>
             </div>
             <div class="slidecontainer">
-                <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
+                <input type="range" min="0" max="20" value="0" class="slider" id="myRange">
             </div>
         </div>
         <div class="footer"></div>
     </div>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>
