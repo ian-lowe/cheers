@@ -86,7 +86,7 @@ h5 {
 
 .drink-selector {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 5px 0 5px;
 }
 
 .drink-selector p {
@@ -101,19 +101,14 @@ h5 {
 
 .drink-selector label {
     margin-right: 10px;
-    position: relative;
     padding: 0 .5em;
 }
 
-.drink-selector label:after {
-    content: attr(data-content);
-    position: absolute;
-    color: #000;
-    top: 75%;
-    left: 8%;
-    width: 85%;
-    height: 20%;
-    background-color: #1986a134;
+:checked + span {
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 input[type="radio"] {
@@ -121,8 +116,6 @@ input[type="radio"] {
     margin-right: 10px;
     display: none;
 }
-
-:checked + span { font-weight: bold; }
 
 .button-wrapper {
     margin-top: 40px;
@@ -145,8 +138,8 @@ button:hover {
 
 button:focus {
     outline: none;
-    border-bottom: 1px solid #0000001a;
-    border-right: 1px solid #0000001a;
+    border-bottom: 1px solid #ddda1d4b;
+    border-right: 1px solid #ddda1d4b;
 }
 
 .slidelabels {
@@ -168,7 +161,6 @@ button:focus {
     height: 8px;
     border-radius: 15px;   
     background: #dcdcdd;
-    outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
