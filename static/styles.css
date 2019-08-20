@@ -27,6 +27,7 @@ body, input, textarea, button {
     background-color: #1985A1;
     text-align: center;
     padding: 10px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
@@ -72,6 +73,21 @@ h5 {
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.podcast-wrapper::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+}
+
+.podcast-wrapper::-webkit-scrollbar-track {
+    background-color: rgba(57,57,57, .6);
+    border-radius: 8px;
+}
+
+.podcast-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #1985a1;
 }
 
 h5 {
