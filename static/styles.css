@@ -36,11 +36,11 @@ h2 {
 
 .content {
     grid-column: 1 / -1;
-    padding: 10px;
+    padding: 2px;
 }
 
 .podcast-wrapper {
-    width: 75%;
+    width: 50%;
     height: 235px;
     overflow: auto;
     padding: 20px;
@@ -54,6 +54,7 @@ h5 {
 @media (max-width: 768px) {
     .podcast-wrapper {
         height: 105px;
+        width: 90%;
     }
 }
 
@@ -100,6 +101,12 @@ h5 {
     margin-bottom: 20px;
 }
 
+@media (max-width: 300px) {
+    .podcast-player {
+        width: 75%;
+    }
+}
+
 .drink-selector {
     text-align: center;
     margin: 20px 5px 0 5px;
@@ -116,8 +123,12 @@ h5 {
 }
 
 .drink-selector label {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     padding: 0 .5em;
+}
+
+.bev {
+    margin-right: 10px;
 }
 
 :checked + span {
