@@ -114,6 +114,7 @@ h5 {
 
 .drink-selector p {
     font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 .drink-selector hr {
@@ -123,17 +124,16 @@ h5 {
 }
 
 .drink-selector label {
-    /* margin-right: 10px; */
-    padding: 0 .5em;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .bev {
-    margin-right: 10px;
+    height: 30px;
 }
 
 :checked + span {
     font-size: 1.1em;
-    line-height: 2em;
     font-weight: 400;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
