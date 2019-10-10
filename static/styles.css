@@ -128,10 +128,6 @@ h5 {
     margin-right: 10px;
 }
 
-.bev {
-    height: 30px;
-}
-
 :checked + span {
     font-size: 1.1em;
     font-weight: 400;

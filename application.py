@@ -29,3 +29,6 @@ def api():
     r_json = jsonify(r.json())
 
     return r_json
+
+if __name__ == "__main__":
+    app.run()
