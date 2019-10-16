@@ -193,6 +193,10 @@ button:focus {
     align-items: center;
 }
 
+.slidecontainer label {
+    display: none;
+}
+
 .slider {
     -webkit-appearance: none;
     width: 50%;
