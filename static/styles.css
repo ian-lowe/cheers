@@ -193,10 +193,6 @@ button:focus {
     align-items: center;
 }
 
-.slidecontainer label {
-    display: none;
-}
-
 .slider {
     -webkit-appearance: none;
     width: 50%;
@@ -222,4 +218,11 @@ button:focus {
     height: 20px;
     border-radius: 50%;
     background: #C6878F;
+}
+
+/* general class to hide stuff :) */
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
 }
