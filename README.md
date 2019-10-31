@@ -8,7 +8,7 @@ I thought it would be fun to see what the [Front End Happy Hour](https://fronten
 Built with JavaScript, Python/Flask, and utilizing the Listen API to pull podcast data, this application allows you
 to interactively participate with the crew!
 
-###Directions
+### Directions
   * press the 'Cheers!' button when you hear the keyword! Select water to sober up.
  
 ### Dependencies
