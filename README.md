@@ -1,6 +1,8 @@
 # Cheers! A webapp to interactively participate in the Front End Happy Hour Podcast!
 
-Live link: https://cheers-fehh.herokuapp.com
+Live link: ~~https://cheers-fehh.herokuapp.com~~
+
+This app is no longer deployed due to heroku shutting down their free services...therefore the link above will no longer work.
 
 ## About
 
